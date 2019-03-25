@@ -1,0 +1,8 @@
+<div id="terminal" (click)="click()">
+  <div id="previousLines">
+    <textarea readonly id="output"></textarea>
+  </div>
+  <div id="inputLine">
+    <label for="input">></label><input type="text" id="inputbox" (keyup.enter)="enter(inputbox.value)"/>
+  </div>
+</div>

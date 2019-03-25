@@ -1,0 +1,50 @@
+
+#terminal {
+    font-family: monospace;
+    background-color: #020f13;
+    margin: auto;
+    width: 60%;
+    border: 3px solid grey;
+    padding: 10px;
+    color: #21b0f3;
+}
+
+@media only screen and (max-width: 600px) {
+    #terminal {
+      width: 95%;
+    }
+}
+
+#output {
+    background-color: #020f13;
+    font-family: monospace;
+    color:#21b0f3;
+    border: none;
+    width: 100%;
+    resize: none;
+    height: 200px;
+}
+
+#output::selection {
+    color: none;
+}
+
+#output:focus {
+    outline-width: 0;
+}
+
+label {
+    display: inline;
+}
+
+#inputbox {
+    font-family: monospace;
+    background-color: #020f13;
+    width: 95%;
+    color: #21b0f3;
+    border: none;
+}
+
+#inputbox:focus {
+    outline-style: none;
+}
