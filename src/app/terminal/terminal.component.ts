@@ -57,7 +57,7 @@ export class TerminalComponent implements AfterViewInit {
     }
     if (checkText === "hema-app") {
       this.writeToConsole(false, "opening in a new tab");
-      window.open("https://github.com/TonyPacheco/NoDoubles");
+      window.open("https://play.google.com/store/apps/details?id=com.nodoubles.app");
       return;
     }
     if (checkText === "mealio") {
