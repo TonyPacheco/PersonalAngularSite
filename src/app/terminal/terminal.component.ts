@@ -14,12 +14,13 @@ export class TerminalComponent implements AfterViewInit {
   constructor() { }
 
   ngAfterViewInit(){
+    var year = new Date().getFullYear();
     this.inputbox = <HTMLInputElement> document.getElementById("inputbox");
     this.outputbox = <HTMLTextAreaElement> document.getElementById("output");
     this.outputbox.innerHTML = "Welcome to Tony Pacheco\'s personal website!";
     this.writeToConsole(false, "You can type 'help' for a list of commands");
     this.writeToConsole(false, "or 'exit' if you don't love terminals like Tony");
-    this.writeToConsole(false, "(c) Tony Pacheco 2019");
+    this.writeToConsole(false, "(c) Tony Pacheco " + year);
     this.inputbox.focus();
   }
 
